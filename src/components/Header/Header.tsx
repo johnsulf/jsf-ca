@@ -1,9 +1,7 @@
-import * as React from 'react';
 import { Menubar } from 'primereact/menubar';
-        
+import * as React from 'react';
 
-export interface IHeaderProps {
-}
+export interface IHeaderProps {}
 
 export default class Header extends React.Component<IHeaderProps> {
   public render() {
