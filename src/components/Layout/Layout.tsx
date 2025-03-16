@@ -10,7 +10,7 @@ export default class Layout extends React.Component<ILayoutProps> {
     return (
       <>
         <Header />
-        <main>
+        <main className="min-h-[90svh]">
           <Outlet />
         </main>
         <Footer />
