@@ -26,6 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "npm run prettier:write",
+    "lint": "npm run eslint:check",
+    "eslint:fix": "eslint --config eslint.config.mjs --fix src/**/*.ts src/**/*.tsx",
+    "eslint:check": "eslint --config eslint.config.mjs src/**/*.ts src/**/*.tsx",
     "prettier:write": "prettier --config .prettierrc --write .",
     "prettier:check": "prettier --config .prettierrc --check ."
   },
@@ -42,8 +45,13 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
     "prettier": "3.5.3",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "typescript-eslint": "^8.26.1"
   }
 }
