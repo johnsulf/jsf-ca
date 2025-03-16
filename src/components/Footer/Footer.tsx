@@ -5,7 +5,7 @@ export interface IFooterProps {}
 export default class Footer extends React.Component<IFooterProps> {
   public render() {
     return (
-      <footer className="bg-blue-400 text-white absolute bottom-0 w-full text-center p-3">
+      <footer className="absolute bottom-0 w-full bg-blue-400 p-3 text-center text-white">
         <p>Copyright 2025</p>
       </footer>
     );
